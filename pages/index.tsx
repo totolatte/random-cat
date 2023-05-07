@@ -24,8 +24,18 @@ const IndexPage: NextPage<Props> = ({ initialImageUrl }) => {
   };
   return (
     <div>
-      <button onClick={handleClick}>他のにゃんこも見る</button>
-      <div>{loading || <img src={imageUrl} />}</div>
+          <button
+        onClick={handleClick}
+        style={{
+          backgroundColor: "#319795",
+          border: "none",
+          borderRadius: "4px",
+          color: "white",
+          padding: "4px 8px",
+        }}
+      >
+        きょうのにゃんこ🐱
+      </button>
     </div>
   );
 };
